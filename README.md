@@ -6,7 +6,7 @@ Repository of the 2026 IEEE VTS Motor Vehicle Challenge (MVC) regarding the powe
 
 ## Submission of proposal
 
-The proposal(s) must be submitted by using the above link (available after February 1st, 2026). The deadline for the proposal submission is :red_circle:<mark>1st of March, 2025</mark>:red_circle: .
+The proposal(s) must be submitted by using the above link (available after February 1st, 2026). The deadline for the proposal submission is :red_circle:<mark>1st of March, 2026</mark>:red_circle: .
 
 For safety reasons, the submission can be made only by people with a Gmail account. In the form, it is possible to indicate the academic/industrial contact. If the possession of a Gmail account is an issue, please get in touch with MVC 2026 organizers.
 
