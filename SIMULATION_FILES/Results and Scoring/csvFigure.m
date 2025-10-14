@@ -1,0 +1,74 @@
+function [] = csvFigure(resultData, folderName)
+
+DownSampleTime = 0.5;
+tt1 = timetable(seconds(resultData.SoC_BP.Time), resultData.SoC_BP.Data, 'VariableNames', {resultData.SoC_BP.Name});
+tt1 = retime(tt1,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt2 = timetable(seconds(resultData.vBP.Time), resultData.vBP.Data, 'VariableNames', {resultData.vBP.Name});
+tt2 = retime(tt2,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt3 = timetable(seconds(resultData.iBP.Time), resultData.iBP.Data, 'VariableNames', {resultData.iBP.Name});
+tt3 = retime(tt3,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt4 = timetable(seconds(resultData.P_BP.Time), resultData.P_BP.Data, 'VariableNames', {resultData.P_BP.Name});
+tt4 = retime(tt4,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt5 = timetable(seconds(resultData.alpha.Time), resultData.alpha.Data, 'VariableNames', {resultData.alpha.Name});
+tt5 = retime(tt5,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt6 = timetable(seconds(resultData.clock.Time), resultData.clock.Data, 'VariableNames', {resultData.clock.Name});
+tt6 = retime(tt6,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt7 = timetable(seconds(resultData.brakeIsAct.Time), resultData.brakeIsAct.Data, 'VariableNames', {resultData.brakeIsAct.Name});
+tt7 = retime(tt7,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt8 = timetable(seconds(resultData.iEMERGENCY.Time), resultData.iEMERGENCY.Data, 'VariableNames', {resultData.iEMERGENCY.Name});
+tt8 = retime(tt8,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt9 = timetable(seconds(resultData.iWPT.Time), resultData.iWPT.Data, 'VariableNames', {resultData.iWPT.Name});
+tt9 = retime(tt9,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt10 = timetable(seconds(resultData.iPLUG.Time), resultData.iPLUG.Data, 'VariableNames', {resultData.iPLUG.Name});
+tt10 = retime(tt10,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt11 = timetable(seconds(resultData.iPLUGfast.Time), resultData.iPLUGfast.Data, 'VariableNames', {resultData.iPLUGfast.Name});
+tt11 = retime(tt11,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt12 = timetable(seconds(resultData.iPLUGslow.Time), resultData.iPLUGslow.Data, 'VariableNames', {resultData.iPLUGslow.Name});
+tt12 = retime(tt12,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt13 = timetable(seconds(resultData.vEMERGENCY.Time), resultData.vEMERGENCY.Data, 'VariableNames', {resultData.vEMERGENCY.Name});
+tt13 = retime(tt13,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt14 = timetable(seconds(resultData.vPLUG.Time), resultData.vPLUG.Data, 'VariableNames', {resultData.vPLUG.Name});
+tt14 = retime(tt14,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt15 = timetable(seconds(resultData.vWPT.Time), resultData.vWPT.Data, 'VariableNames', {resultData.vWPT.Name});
+tt15 = retime(tt15,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt16 = timetable(seconds(resultData.roadAngle.Time), resultData.roadAngle.Data, 'VariableNames', {resultData.roadAngle.Name});
+tt16 = retime(tt16,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt17 = timetable(seconds(resultData.speedRef.Time), resultData.speedRef.Data, 'VariableNames', {resultData.speedRef.Name});
+tt17 = retime(tt17,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt18 = timetable(seconds(resultData.vehAddMass.Time), resultData.vehAddMass.Data, 'VariableNames', {resultData.vehAddMass.Name});
+tt18 = retime(tt18,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt19 = timetable(seconds(resultData.windSpeed.Time), resultData.windSpeed.Data, 'VariableNames', {resultData.windSpeed.Name});
+tt19 = retime(tt19,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt20 = timetable(seconds(resultData.vehPosition.Time), resultData.vehPosition.Data, 'VariableNames', {resultData.vehPosition.Name});
+tt20 = retime(tt20,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt21 = timetable(seconds(resultData.vehSpeed.Time), resultData.vehSpeed.Data, 'VariableNames', {resultData.vehSpeed.Name});
+tt21 = retime(tt21,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt22 = timetable(seconds(resultData.torRef.Time), resultData.torRef.Data, 'VariableNames', {resultData.torRef.Name});
+tt22 = retime(tt22,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt23 = timetable(seconds(resultData.torFrMot.Time), resultData.torFrMot.Data, 'VariableNames', {resultData.torFrMot.Name});
+tt23 = retime(tt23,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt24 = timetable(seconds(resultData.torReMot.Time), resultData.torReMot.Data, 'VariableNames', {resultData.torReMot.Name});
+tt24 = retime(tt24,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt25 = timetable(seconds(resultData.torRefFrMot.Time), resultData.torRefFrMot.Data, 'VariableNames', {resultData.torRefFrMot.Name});
+tt25 = retime(tt25,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt26 = timetable(seconds(resultData.torRefReMot.Time), resultData.torRefReMot.Data, 'VariableNames', {resultData.torRefReMot.Name});
+tt26 = retime(tt26,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt27 = timetable(seconds(resultData.torSplit.Time), resultData.torSplit.Data, 'VariableNames', {resultData.torSplit.Name});
+tt27 = retime(tt27,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt28 = timetable(seconds(resultData.torRefSat.Time), resultData.torRefSat.Data, 'VariableNames', {resultData.torRefSat.Name});
+tt28 = retime(tt28,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt29 = timetable(seconds(resultData.torRefFrSat.Time), resultData.torRefFrSat.Data, 'VariableNames', {resultData.torRefFrSat.Name});
+tt29 = retime(tt29,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt30 = timetable(seconds(resultData.torRefReSat.Time), resultData.torRefReSat.Data, 'VariableNames', {resultData.torRefReSat.Name});
+tt30 = retime(tt30,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt31 = timetable(seconds(resultData.wmFrMotor.Time), resultData.wmFrMotor.Data, 'VariableNames', {resultData.wmFrMotor.Name});
+tt31 = retime(tt31,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+tt32 = timetable(seconds(resultData.wmReMotor.Time), resultData.wmReMotor.Data, 'VariableNames', {resultData.wmReMotor.Name});
+tt32 = retime(tt32,'regular', 'mean', 'TimeStep', seconds(DownSampleTime));
+
+TT = synchronize(tt1, tt2, tt3, tt4, tt5, tt6, tt7, tt8, tt9, tt10, tt11, tt12, tt13, tt14, ...
+        tt15, tt16, tt17, tt18, tt19, tt20, tt21, tt22, tt23, tt24, tt25, tt26, tt27, tt28, tt29, tt30, tt31, tt32);
+fullpath = fullfile(folderName, 'csv4figure.csv');
+writetimetable(TT, fullpath);
+
+end
