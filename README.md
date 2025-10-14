@@ -1,12 +1,25 @@
 # MVC_2026
 Repository of the 2026 IEEE VTS Motor Vehicle Challenge (MVC) regarding the power sizing and energy management design of a refrigerated lorry.
 
+![2025-10-14 14 31 05](https://github.com/user-attachments/assets/7166d617-7086-4b38-af79-e9b3fe04d142)
+
+
 ## Introduction
+
+<img width="355" height="239" alt="IPE_Fig1_FT" src="https://github.com/user-attachments/assets/0542e3d5-03ae-4310-b58b-2b8ea5ff5397" />
+
+
+The topic proposed for the IEEE VTS Motor Vehicle Challenge 2026 (MVC 2026) consists of two tasks. Firstly, the participants are required to design a powertrain for a dual-motor refrigerated lorry, which is able to transport 10 tons of frozen food. The lorry must be equipped with a refrigeration system that can maintain the temperature of the cargo at -18°C. The second task consists of developing the lorry’s energy management strategy. The motor and battery pack must be selected to maximize efficiency and reduce the time to complete the task. The battery pack can be charged in three different ways: wireless charging, plug-in charging, and regenerative braking. The MVC 2026 participants should also consider the impact of the lorry’s weight as well as road slope, traffic, and wind on its performance and energy consumption.
+
+<img width="814" height="371" alt="IPE_SimulationScheme" src="https://github.com/user-attachments/assets/b8abe198-8ddf-4ff3-bffe-1641f4f09216" />
+
+## Team registration
+The participants willing to participate to the MVC 2026 competition must subscribe the team at this [LINK](https://forms.gle/kw6bpar6wxactC3k8). End of subscriptions is 1st of February, 2026.
 
 
 ## Submission of proposal
 
-The proposal(s) must be submitted by using the above link (available after February 1st, 2026). The deadline for the proposal submission is :red_circle:<mark>1st of March, 2026</mark>:red_circle: .
+The proposal(s) must be submitted by using the link (available after February 1st, 2026). The deadline for the proposal submission is :red_circle:<mark>1st of March, 2026</mark>:red_circle: .
 
 For safety reasons, the submission can be made only by people with a Gmail account. In the form, it is possible to indicate the academic/industrial contact. If the possession of a Gmail account is an issue, please get in touch with MVC 2026 organizers.
 
