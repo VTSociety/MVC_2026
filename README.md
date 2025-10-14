@@ -41,7 +41,7 @@ In order to evaluate each proposal, the teams must submit in the form (link avai
 Please refer to the [CHANGELOG.md](https://github.com/VTSociety/MVC_2026/blob/main/CHANGELOG.md) file for modifications of the simulation and differences with respect to the paper in the [Bibliography](), that is ([preprint version here](Materials)).
 
 Remarks:
-* Please take notice of the [Discussion board](https://github.com/VTSociety/MVC_2026/discussions) for Q&A. Start a new discussion if you've found no answer to your issue. No answers will be given to questions related the MVC 2025 by private emails.
+* Please take notice of the [Discussion board](https://github.com/VTSociety/MVC_2026/discussions) for Q&A. Start a new discussion if you've found no answer to your issue. No answers will be given to questions related the MVC 2026 by private emails.
 
 ## Bibliography
 
