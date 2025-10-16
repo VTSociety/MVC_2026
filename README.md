@@ -14,28 +14,30 @@ The topic proposed for the IEEE VTS Motor Vehicle Challenge 2026 (MVC 2026) cons
 <img width="814" height="371" alt="IPE_SimulationScheme" src="https://github.com/user-attachments/assets/b8abe198-8ddf-4ff3-bffe-1641f4f09216" />
 
 ## Team registration
-The participants willing to participate to the MVC 2026 competition must subscribe the team at this [LINK](https://forms.gle/kw6bpar6wxactC3k8). End of subscriptions is 1st of February, 2026.
+The participants willing to participate to the MVC 2026 competition must subscribe the team at this [LINK](https://forms.gle/kw6bpar6wxactC3k8). End of subscriptions is :red_circle:<mark>1st of February, 2026</mark>:red_circle:.
 
 
 ## Submission of proposal
 
-The proposal(s) must be submitted by using the link (available after February 1st, 2026). The deadline for the proposal submission is :red_circle:<mark>1st of March, 2026</mark>:red_circle: .
+The proposal(s) must be submitted by using the link (available after February 1st, 2026). The deadline for the proposal submission is :red_circle:<mark>1st of March, 2026</mark>:red_circle:.
 
 For safety reasons, the submission can be made only by people with a Gmail account. In the form, it is possible to indicate the academic/industrial contact. If the possession of a Gmail account is an issue, please get in touch with MVC 2026 organizers.
 
 ## Rules
-The participants to the challenge will operate only in the EMS block provided within the simulation file. All the remaining blocks must not be modified. <ins>The final evaluation will be carried out by implementing the EMS block developed by each participant in the original simulation file</ins>. That is, <mark>all the modifications made in subsystems which are not the EMS one will be discarded</mark>. 
+The participants to the challenge will operate only on the SystemDesign.m and ProposedEMS.m MATLAB scripts, as well as the EMS block provided within the simulation files. All the other scripts and simulation blocks must not be modified. <ins>The final evaluation will be carried out by implementing the EMS block developed by each participant and the specified scripts in the original simulation file</ins>. That is, <mark>all the modifications made in subsystems which are not the EMS one and the other scripts will be discarded</mark>. 
 
 Important rules that the submitted proposal must satisfy for being considered valid in this competition
-1. All parameters defined in the "Parameters" folder can be used to develop the strategy.
-2. All parameter defined in the "Reference" folder and "main_runSimulation.m" **cannot** be used to develop the strategy: the EMS **must not** adopt whatsoever a priori knowledge of the reference working cycle.
-3. All parameters adopted for the developed strategy **must** be specified only in the "ProposedEMS.m" script.
-4. Energy constraints of the BP and SM must always be guaranteed.
+1. All parameters and data provided in the "EMS" section of the main.m script can be used to develop the strategy.
+2. All parameters adopted for the developed strategy **must** be specified only in the "ProposedEMS.m" script.
+3. Energy constraints of the battery must always be guaranteed.
+4. The simulation must not exceed 2.5 times the duration of the defined route (composed by N laps).
 
 ## What has to be uploaded for evaluation
 In order to evaluate each proposal, the teams must submit in the form (link available after February 1st, 2026) the following files:
-- "proposedEMS.m" renamed as "nameTeam_numProp_EMS.m" where "numProp" must identify the proposal number of the team. If only one proposal is presented, please use "num1" (e.g., "teamWhite_prop1_EMS.m"). Please avoid spaces in the file name.
-- simulink subsystem of the proposed EMS. Rename the file as “nameTeam_numProp_Simulink.slx”. The same considerations made for the EMS Matlab script holds. Please note that **only** the Simulink block of the EMS is necessary, not the whole simulation. It is mandatory to adopt the same names of the signal in the Simulink buses.
+- "ProposedEMS.m" renamed as "nameTeam_numProp_ProposedEMS.m" where "numProp" must identify the proposal number of the team. If only one proposal is presented, please use "num1" (e.g., "teamWhite_prop1_ProposedEMS.m"). Please avoid spaces in the file name.
+- "SystemDesign.m" renamed as "nameTeam_numProp_SystemDesign.m" where "numProp" must identify the proposal number of the team. If only one proposal is presented, please use "num1" (e.g., "teamWhite_prop1_SystemDesign.m"). Please avoid spaces in the file name.
+- "EMS_sim.slx" renamed as "nameTeam_numProp_EMS.slx" where "numProp" must identify the proposal number of the team. If only one proposal is presented, please use "num1" (e.g., "teamWhite_prop1_EMS.slx"). Please avoid spaces in the file name.
+- overall simulation files of the proposed solution (used as a backup version). Create a ZIP file including the folders Parameters, Reference, Result and Scoring, and the files main.m, MVC2026_sim.slx, and EMS_sim.slx. Rename the ZIP file as “nameTeam_numProp_MVC2026.zip”. The same considerations made for the EMS Matlab script holds. Please note the ZIP folder is only a backup. Evaluation will mainly be based on the individual submitted files.
 
 ## Release Notes
 Please refer to the [CHANGELOG.md](https://github.com/VTSociety/MVC_2026/blob/main/CHANGELOG.md) file for modifications of the simulation and differences with respect to the paper in the [Bibliography](), that is ([preprint version here](Materials)).
