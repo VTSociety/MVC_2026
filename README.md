@@ -38,6 +38,7 @@ In order to evaluate each proposal, the teams must submit in the form (link avai
 - "SystemDesign.m" renamed as "nameTeam_numProp_SystemDesign.m" where "numProp" must identify the proposal number of the team. If only one proposal is presented, please use "num1" (e.g., "teamWhite_prop1_SystemDesign.m"). Please avoid spaces in the file name.
 - "EMS_sim.slx" renamed as "nameTeam_numProp_EMS.slx" where "numProp" must identify the proposal number of the team. If only one proposal is presented, please use "num1" (e.g., "teamWhite_prop1_EMS.slx"). Please avoid spaces in the file name.
 - overall simulation files of the proposed solution (used as a backup version). Create a ZIP file including the folders Parameters, Reference, Result and Scoring, and the files main.m, MVC2026_sim.slx, and EMS_sim.slx. Rename the ZIP file as “nameTeam_numProp_MVC2026.zip”. The same considerations made for the EMS Matlab script holds. Please note the ZIP folder is only a backup. Evaluation will mainly be based on the individual submitted files.
+Please note that the team name must correspond to the name specified in the registration form.
 
 ## Release Notes
 Please refer to the [CHANGELOG.md](https://github.com/VTSociety/MVC_2026/blob/main/CHANGELOG.md) file for modifications of the simulation and differences with respect to the paper in the [Bibliography](), that is ([preprint version here](Materials)).
