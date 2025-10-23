@@ -31,6 +31,7 @@ Important rules that the submitted proposal must satisfy for being considered va
 2. All parameters adopted for the developed strategy **must** be specified only in the "ProposedEMS.m" script.
 3. Energy constraints of the battery must always be guaranteed.
 4. The simulation must not exceed 2.5 times the duration of the defined route (composed by N laps).
+5. The MATLAB/Simulink version must be compliant with the terms specified in the [INSTALLATION](INSTALLATION.md)
 
 ## What has to be uploaded for evaluation
 In order to evaluate each proposal, the teams must submit in the form (link available after February 1st, 2026) the following files:
