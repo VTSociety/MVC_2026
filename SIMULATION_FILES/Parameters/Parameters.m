@@ -144,7 +144,7 @@ DF                  = 1;
 
 %% Charging sistem parameters
 % Plug
-CH.PLUG.V           = 400;                              % [V] Plug voltage 
+CH.PLUG.V           = 560;                              % [V] Plug voltage 
 CH.PLUG.IFast       = 200;                              % [A] Fast plug current referred to BUS 
 CH.PLUG.ISlow       = 100;                              % [A] Slow plug current referred to BUS 
 CH.PLUG.initPos1    = 99;                               % [m] Starting high power charging position
@@ -154,7 +154,7 @@ CH.PLUG.maxSpeed    = 0.1;                              % [m/s] Max vehicle spee
 CH.PLUG.lenghtZone  = 2;                                % [m] Charging region lenght is 2 meters
 
 % WPT
-CH.WPT.V            = 200;                              % [V] WPT voltage (V)
+CH.WPT.V            = 650;                              % [V] WPT voltage (V)
 CH.WPT.I            = 125;                              % [A] WPT current referred to BUS (A)
 CH.WPT.initPos      = 500;                              % [m] Starting charging position (m)
 CH.WPT.endPos       = 900;                              % [m] Starting charging position (m)
@@ -163,7 +163,7 @@ CH.WPT.CHprof.gain  = [0 0 1 1 0.9 1 1 0 0];            % [-] Charging profile g
 CH.WPT.CHprof.th    = [0 1 7 9 10 11 13 19 20]*2;       % [m] Breakpoints of charging profile
 
 % Emergency
-CH.EMER.V           = 350;                              % [V] Emergency voltage 
+CH.EMER.V           = 600;                              % [V] Emergency voltage 
 CH.EMER.I           = 100;                              % [A] Emergency current referred to BUS 
 CH.EMER.minSoC      = 5;                                % [%] Min emergency battery SoC
 CH.EMER.maxSoC      = 50;                               % [%] Final emergency charging SoC
@@ -178,7 +178,7 @@ CONV.BAT.Eff_FullPower = 97;                            % [%] Efficiency at full
 % Plug converter efficiency
 CONV.PLUG.eta       = [.75 .85 .92 .93 .94 .95 .95 .96 .95 .94 .92*ones(1,6)]*100;
                                                         % [-] Efficiency 
-CONV.PLUG.I         = (0:0.1:1.5)*BAT.I_nom;            % [A] Current vector to tabulate converter efficiency
+CONV.PLUG.I         = (0:0.1:1.5)*CH.PLUG.IFast;        % [A] Current vector to tabulate converter efficiency
 
 % WPT converter efficiency
 CONV.WPT.eta        = [.75 .85 .92 .93 .94 .95 .95 .96 .95 .94 .92*ones(1,6)]*100;
@@ -202,4 +202,5 @@ VEH.Mass             = (12000 + BAT.Weight + MOT.Front.Weight + MOT.Rear.Weight)
 VEH.FrontArea        = 7;                               % [m^2] Frontal area
 VEH.DragCoeff        = 0.4;                             % [-] Drag coefficient
 VEH.AirDensity       = 1.18;                            % [kg/m^3] Air density 
+
 
