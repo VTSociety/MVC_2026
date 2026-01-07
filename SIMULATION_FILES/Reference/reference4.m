@@ -90,10 +90,11 @@ LoadRef.values = zeros(size(LoadRef.time));
 
 tempSpeedzero = TraceRef.SpeedRef==0;
 
-LoadMax     = 1250;
+LoadMax     = 12500;
 LoadMin     = 0;
 
 LoadRef.values(tempSpeedzero) = LoadMin + (LoadMax-LoadMin)*rand(1,sum(tempSpeedzero));
+LoadRef.values = LoadRef.values*scaleF;
 
 %%
 TraceRef.Laps = 10;
