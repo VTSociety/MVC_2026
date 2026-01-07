@@ -172,22 +172,22 @@ LoadRef.time = [
 ];
 
 LoadRef.values = [
+10000
+7500
+5000
+2500
+0
+0
+12500
+7800
+6000
 1000
-750
-500
-250
+7000
+6000
+2000
+1500
 0
-0
-1250
-780
-600
-100
-700
-600
-200
-150
-0
-];
+]*scaleF;
 
 LoadRef.Ts = 1e-2;
 tempTime = LoadRef.time(1):LoadRef.Ts:LoadRef.time(end);
