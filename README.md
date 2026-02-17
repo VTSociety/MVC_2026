@@ -14,7 +14,10 @@ The topic proposed for the IEEE VTS Motor Vehicle Challenge 2026 (MVC 2026) cons
 <img width="814" height="371" alt="IPE_SimulationScheme" src="https://github.com/user-attachments/assets/b8abe198-8ddf-4ff3-bffe-1641f4f09216" />
 
 ## Team registration
-The participants willing to participate to the MVC 2026 competition must subscribe the team at this [LINK](https://forms.gle/kw6bpar6wxactC3k8). End of subscriptions has been postponed to the :red_circle:<mark>8th of February, 2026 (postponed)</mark>:red_circle:.
+
+<!--The participants willing to participate to the MVC 2026 competition must subscribe the team at this [LINK](https://forms.gle/kw6bpar6wxactC3k8). End of subscriptions has been postponed to the :red_circle:<mark>8th of February, 2026 (postponed)</mark>:red_circle:. -->
+
+Team registration is now closed.
 
 
 ## Submission of proposal
