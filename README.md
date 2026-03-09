@@ -22,7 +22,7 @@ Team registration is now closed.
 
 ## Submission of proposal
 
-The proposal(s) must be submitted by using the [LINK](https://forms.gle/qqpn6VLg3hZCiiqh7). The deadline for the proposal submission has been postponed to :red_circle:<mark>8th of March, 2026</mark>:red_circle:.
+The proposal(s) must be submitted by using the [LINK](https://forms.gle/qqpn6VLg3hZCiiqh7). The deadline for the proposal submission has been further postponed to :red_circle:<mark>17th of March, 2026</mark>:red_circle:.
 
 For safety reasons, the submission can be made only by people with a Gmail account. In the form, it is possible to indicate the academic/industrial contact. If the possession of a Gmail account is an issue, please get in touch with MVC 2026 organizers.
 
