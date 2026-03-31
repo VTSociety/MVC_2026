@@ -13,6 +13,10 @@ The topic proposed for the IEEE VTS Motor Vehicle Challenge 2026 (MVC 2026) cons
 
 <img width="814" height="371" alt="IPE_SimulationScheme" src="https://github.com/user-attachments/assets/b8abe198-8ddf-4ff3-bffe-1641f4f09216" />
 
+## Results of competition
+
+The results of the MVC 2026 will be available from 15th of April, 2026.
+
 ## Team registration
 
 <!--The participants willing to participate to the MVC 2026 competition must subscribe the team at this [LINK](https://forms.gle/kw6bpar6wxactC3k8). End of subscriptions has been postponed to the :red_circle:<mark>8th of February, 2026 (postponed)</mark>:red_circle:. -->
@@ -22,9 +26,7 @@ Team registration is now closed.
 
 ## Submission of proposal
 
-The proposal(s) must be submitted by using the [LINK](https://forms.gle/qqpn6VLg3hZCiiqh7). The deadline for the proposal submission has been further postponed to :red_circle:<mark>17th of March, 2026</mark>:red_circle:.
-
-For safety reasons, the submission can be made only by people with a Gmail account. In the form, it is possible to indicate the academic/industrial contact. If the possession of a Gmail account is an issue, please get in touch with MVC 2026 organizers.
+The submission of proposal is now closed.
 
 ## Rules
 The participants to the challenge will operate only on the SystemDesign.m and ProposedEMS.m MATLAB scripts, as well as the EMS block provided within the simulation files. All the other scripts and simulation blocks must not be modified. <ins>The final evaluation will be carried out by implementing the EMS block developed by each participant and the specified scripts in the original simulation file</ins>. That is, <mark>all the modifications made in subsystems which are not the EMS one and the other scripts will be discarded</mark>. 
@@ -37,7 +39,7 @@ Important rules that the submitted proposal must satisfy for being considered va
 5. The MATLAB/Simulink version must be compliant with the terms specified in the [INSTALLATION](INSTALLATION.md)
 
 ## What has to be uploaded for evaluation
-In order to evaluate each proposal, the teams must submit in the form (link available after February 1st, 2026) the following files:
+In order to evaluate each proposal, the teams must submit in the form the following files:
 - "ProposedEMS.m" renamed as "nameTeam_numProp_ProposedEMS.m" where "numProp" must identify the proposal number of the team. If only one proposal is presented, please use "num1" (e.g., "teamWhite_prop1_ProposedEMS.m"). Please avoid spaces in the file name.
 - "SystemDesign.m" renamed as "nameTeam_numProp_SystemDesign.m" where "numProp" must identify the proposal number of the team. If only one proposal is presented, please use "num1" (e.g., "teamWhite_prop1_SystemDesign.m"). Please avoid spaces in the file name.
 - "EMS_sim.slx" renamed as "nameTeam_numProp_EMS.slx" where "numProp" must identify the proposal number of the team. If only one proposal is presented, please use "num1" (e.g., "teamWhite_prop1_EMS.slx"). Please avoid spaces in the file name.
