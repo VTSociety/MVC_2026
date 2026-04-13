@@ -15,8 +15,7 @@ The topic proposed for the IEEE VTS Motor Vehicle Challenge 2026 (MVC 2026) cons
 
 ## Results of competition
 
-The results of the MVC 2026 will be available from 15th of April, 2026.
-
+The results of the MVC 2026 are available in the [**FINAL_RESULTS**](https://github.com/VTSociety/MVC_2026/tree/main/FINAL_RESULTS) folder.
 ## Team registration
 
 <!--The participants willing to participate to the MVC 2026 competition must subscribe the team at this [LINK](https://forms.gle/kw6bpar6wxactC3k8). End of subscriptions has been postponed to the :red_circle:<mark>8th of February, 2026 (postponed)</mark>:red_circle:. -->
