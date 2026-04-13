@@ -1,4 +1,4 @@
-# RESULTS of the  2026 IEEE VTS Motor vehichle challenge
+# RESULTS of the  2026 IEEE VTS Motor Vehicle Challenge
 
 The following tables summarize the final results. The first table reports the best result obtained by each team, while the second table lists all submitted solutions.
 
